@@ -1,4 +1,4 @@
-import makeUser from '..src/home/make-user.js';
+import makeUser from '../src/home/make-user.js';
 const test = QUnit.test;
 
 QUnit.module('make user');
@@ -19,3 +19,5 @@ test('create user object from form data', (assert) => {
     //assert
     assert.deepEqual(user, expected);
 });
+
+   
