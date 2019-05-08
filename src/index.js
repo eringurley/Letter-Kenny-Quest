@@ -1,5 +1,5 @@
-import api from './src/services/api.js'; 
-import makeUser from '.make-user.js';
+import api from './services/api.js'; 
+import makeUser from './home/make-user.js';
 
 const userSignUp = document.getElementById('user-sign-up');
 
