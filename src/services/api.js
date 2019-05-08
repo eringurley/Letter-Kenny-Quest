@@ -7,11 +7,10 @@ const api = {
         api.storage.setItem('user', json);
     }, 
     getUser() {
-        return;
-        // const json = api.storaage.getItem('user');
-        // if(!json) return null;
-        // const user = JSON.parge(json);
-        // return user;
+        const json = api.storage.getItem('user');
+        if(!json) return null;
+        const user = JSON.parse(json);
+        return user;
     }
 };
 
