@@ -1,10 +1,10 @@
 const api = {
     //use by testing to control where api saves data 
-    stroage: localStorage, 
+    storage: localStorage, 
     //methods for reading and saving data
     signUp(user) {
         const json = JSON.stringify(user);
-        api.stroage.setItem('user', json);
+        api.storage.setItem('user', json);
     }, 
     getUser() {
         return;
