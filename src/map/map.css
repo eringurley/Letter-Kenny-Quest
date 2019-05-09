@@ -9,24 +9,18 @@ body {
     text-align: center;
 
 }
-header {
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+
+.quest {
+    position:absolute;
 }
-fieldset {
-    border: 6px solid  rgb(73, 33, 14, 0.753); 
-    padding: 20px;
-    margin-left: 40px;
+
+.profile {
+    text-align: right;
+    padding-right: 30px;
 }
-button {
-    margin-top: 20px;
-    margin-left: 40px;
-    padding: 15px;
-    font-family: 'Anton', sans-serif;
-    font-size: 1.1em;
-    color: rgb(73, 33, 14, 0.753);
+img {
+
 }
-#user-sign-up{
-    font-size: 1.2em;
+.profile-stat-label {
+    position: relative;
 }
