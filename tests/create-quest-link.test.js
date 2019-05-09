@@ -1,4 +1,4 @@
-// import createQuestLink from '../src/'map/create-quest-createQuestLink.js'
+import createQuestLink from '../src/'map/create-quest-createQuestLink.js'
 const test = QUnit.test;
 
 QUnit.module('create quest link');
