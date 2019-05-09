@@ -10,11 +10,11 @@ test('create correct html', (assert) => {
         title: 'Barn'
     };
 
-    const expected = '<a class="barn" href="quest.html?id=barn">></a>';
+    const expected = '<a class="barn" href="quest.html?id=barn">Barn</a>';
 
     //act
     const dom = createQuestLink(quest);
 
     //assert
-    assert.eqaul(dom.outerHTML, expected);
+    assert.equal(dom.outerHTML, expected);
 });
