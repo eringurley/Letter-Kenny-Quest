@@ -1,0 +1,11 @@
+body {
+    max-width:900 px;
+    margin: auto;
+    background-image: url('../../public/woodbackground.png');
+    background-repeat: no-repeat;
+    background-size: 100%100vh;
+    font-family: 'Anton', sans-serif;
+    color: rgba(73, 33, 14, 0.753);
+    text-align: center;
+
+}
