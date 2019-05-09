@@ -1,11 +1,11 @@
-import createQuestLink from '../src/'map/create-quest-createQuestLink.js'
+import createQuestLink from '../src/map/create-quest-link.js';
 const test = QUnit.test;
 
 QUnit.module('create quest link');
 
-test('create correct html', (assert)  => {
+test('create correct html', (assert) => {
     //arrange
-    const quest {
+    const quest = {
         id: 'barn',
         title: 'Barn'
     };
