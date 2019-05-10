@@ -1,6 +1,6 @@
 import api from '../services/api.js';
 import createQuestLink from './create-quest-link.js';
-import loadProfile from './load-profile.js';
+import loadProfile from '../services/load-profile.js';
 
 loadProfile();
 
@@ -9,8 +9,6 @@ const user = api.getUser();
 if(!user) {
     window.location = './';
 }
-
-
 
 const quests = api.getQuests();
 const div = document.getElementById('quests');
