@@ -1,13 +1,12 @@
 import api from '../services/api.js';
 import createChoice from '../quest/create-choice.js';
 import loadProfile from '../services/load-profile.js';
-// import scoreQuest from './score-quest.js';
+import scoreQuest from '../quest/score-quest.js';
 
 loadProfile();
 
 const searchParams = new URLSearchParams(window.location.search);
 const questId = searchParams.get('id');
-console.log(questId);
 const quest = api.getQuest(questId);
 
 if(!quest) {
@@ -40,10 +39,10 @@ choiceForm.addEventListener('submit', function(event) {
         const choice = quest.choices[i];
         if(choice.id === choiceId){
             // resultDescription.textContent = choice.result;
-            // const user = api.getUser();
-            // // const updatedUser = scoreQuest(choice, user, quest);
-            // // api.saveUser(updatedUser);
-            // loadProfile();
+            const user = api.getUser();
+            const updatedUser = scoreQuest(choice, user, quest);
+            api.saveUser(updatedUser);
+            loadProfile();
         }
     }
     // choiceForm.classList.add('hidden');
