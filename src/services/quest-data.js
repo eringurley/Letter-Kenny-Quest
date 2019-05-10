@@ -6,7 +6,7 @@ const barn = {
     `,
     choices: [{
         id: 'horse',
-        description: 'Cleary the horse dressed up as a unicorn.',
+        description: 'Cleary, the horse dressed up as a unicorn.',
         result: `
             You're correct. This is the best answer you could have chosen. The bartender gives yous 5 free shots of GusNBru and 5 Puppers. 
         `,

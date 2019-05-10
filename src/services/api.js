@@ -1,5 +1,6 @@
 import questData from './quest-data.js';
 
+
 const api = {
     //use by testing to control where api saves data 
     storage: localStorage, 
@@ -17,15 +18,15 @@ const api = {
     getQuests() {
         return questData;
     },
-    getQuest(id) {
-        const quests = api.getQuests();
-        for(let i = 0; i < quests.length; i++) {
-            const questId = quests[i].id;
-            if(questID === id) {
-                return quests [id];
-            }
-        }
-    }
+    // getQuest(id) {
+    //     const quests = api.getQuests();
+    //     for(let i = 0; i < quests.length; i++) {
+    //         const questId = quests[i].id;
+    //         if(questID === id) {
+    //             return quests [id];
+    //         }
+    //     }
+    // }
 };
 
 export default api;

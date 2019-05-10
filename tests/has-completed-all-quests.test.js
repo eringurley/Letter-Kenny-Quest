@@ -16,8 +16,6 @@ test('returns true has completed all quests', function(assert) {
             three: true
         }
     };
-    console.log(quests);
-
     const hasCompleted = hasCompletedAllQuests(quests, user);
     assert.equal(hasCompleted, true);
 });
