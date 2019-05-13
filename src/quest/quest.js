@@ -45,7 +45,7 @@ choiceForm.addEventListener('submit', function(event) {
             loadProfile();
         }
     }
-    // choiceForm.classList.add('hidden');
+    choiceForm.classList.add('hidden');
     // result.classList.remove('hidden');
 }
 );
