@@ -9,18 +9,3 @@ body {
     text-align: center;
 
 }
-
-.quest {
-    position:absolute;
-}
-
-.profile {
-    text-align: right;
-    padding-right: 30px;
-}
-img {
-
-}
-.profile-stat-label {
-    position: relative;
-}
