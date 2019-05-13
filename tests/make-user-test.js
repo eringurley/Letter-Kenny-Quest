@@ -11,7 +11,8 @@ test('create user object from form data', (assert) => {
     const expected = {
         character: 'Wayne',
         puppers: 3,
-        gusNbru: 1
+        gusNbru: 1,
+        completed: {}
     };
     //act
     const user = makeUser(formData);
