@@ -6,7 +6,7 @@ const userSignUp = document.getElementById('user-sign-up');
 userSignUp.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const formData = newFormData(userSignUp);
+    const formData = new FormData(userSignUp);
     const user = makeUser(formData);
     api.saveUser(user);
 
