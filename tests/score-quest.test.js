@@ -1,4 +1,5 @@
 import api from '../src/services/api.js';
+import scoreQuest from '../src/quest/score-quest.js';
 // 
 
 const test = QUnit.test;
@@ -21,8 +22,8 @@ test('test to return updated user profile', (assert) => {
     //act
     const newUser = scoreQuest(choice, user);
     const result = {
-        puppers: 5,
-        gusNbru: -5
+        puppers: 6,
+        gusNbru: 10
     };
 
     //assert
